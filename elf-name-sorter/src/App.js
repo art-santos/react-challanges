@@ -26,7 +26,6 @@ const App = () => {
 
   const stringfiedElves = elves
   const stringfiedSort = sort
-  
 
   return (
     <div className='App'>
