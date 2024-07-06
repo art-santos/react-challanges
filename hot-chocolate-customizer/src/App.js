@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'https://esm.sh/react@18.2.0'
+import ReactDOM from 'https://esm.sh/react-dom@18.2.0'
 
-function App() {
+const App = () => {
+  // Use the useState hook to manage the component's state
+  const [mix, setMix] = useState('regular');
+  const [milk, setMilk] = useState('whole');
+  const [toppings, setToppings] = useState('marshmallows');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hot Chocolate Customizer</h1>
+      {/*TODO: ADD A FORM FOR SETTING MIX, MILK & TOPPING*/}
+      {/*TODO: INCLUDE AT LEAST 3 TYPES OF EACH*/}
+      <p>
+        Your hot chocolate: {mix} with {milk} milk and {toppings} on top.
+      </p>
     </div>
   );
 }
