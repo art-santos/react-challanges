@@ -2,25 +2,25 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [naughtyKids, setNaughtyKids] = React.useState([]);
+  const [niceKids, setNiceKids] = React.useState([]);
+
+  // Add the handleSort function here
+
+  // Add a reference to the input field here
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Santa's Naughty and Nice List</h1>
+      {/* Add the input field here */}
+      {/* Add the buttons here */}
+      <h2>Naughty List</h2>
+      {/* Add list here */}
+      <h2>Nice List</h2>
+      {/* Add list here */}
     </div>
   );
-}
+};
 
 export default App;
