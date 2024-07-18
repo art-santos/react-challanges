@@ -14,7 +14,6 @@ function checkPasswordsMatch() {
 function checkPasswordStrength() {
   // TODO: Use a regular expression to check if password includes at least one special character
   // TODO: Check if password is at least 8 characters long
-  // TODO: Return true if password has a special character and is at least 8 characters long, false otherwise
 }
 
 return (
